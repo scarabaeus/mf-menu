@@ -1,9 +1,9 @@
 {
-  "name": "mf-subapp1",
+  "name": "mf-menu",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "rescripts start",
+    "start": "PORT=7100 rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
     "eject": "rescripts eject"
@@ -30,6 +30,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "qiankun": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",

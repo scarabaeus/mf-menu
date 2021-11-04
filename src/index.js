@@ -23,11 +23,11 @@ if (!window.__POWERED_BY_QIANKUN__) {
 }
 
 export async function bootstrap() {
-  console.log('[mf-subapp1] react app bootstraped');
+  console.log('[mf-menu] react app bootstraped');
 }
 
 export async function mount(props) {
-  console.log('[mf-subapp1] props from main framework', props);
+  console.log('[mf-menu] props from main framework', props);
   storeTest(props);
   render(props);
 }
