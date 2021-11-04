@@ -9,8 +9,8 @@ const App = () => {
   };
   const link = { display: 'inline-flex', padding: '0 1rem' };
 
-  const push = (subapp) => {
-    window.history.pushState(null, subapp, subapp);
+  const push = (subApp) => {
+    window.history.pushState(null, subApp, subApp);
   };
 
   return (
