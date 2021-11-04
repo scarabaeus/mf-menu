@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './App.css';
 
 const App = () => {
@@ -9,35 +10,19 @@ const App = () => {
   };
   const link = { display: 'inline-flex', padding: '0 1rem' };
 
-  const push = (subApp) => {
-    window.history.pushState(null, subApp, subApp);
-  };
-
   return (
-    <>
+    <Router>
       <div style={container}>
         <div style={link}>platform-menu app</div>
         <div style={link}>
-          <button
-            onClick={() => {
-              push('/mf-subapp1');
-            }}
-          >
-            mount mf-subapp1
-          </button>
+          <Link to="/mf-subapp1">mount mf-subapp1</Link>
         </div>
         <div style={link}>
-          <button
-            onClick={() => {
-              push('/mf-subapp2');
-            }}
-          >
-            mount mf-subapp2
-          </button>
+          <Link to="/mf-subapp2">mount mf-subapp2</Link>
         </div>
         <div>React version: {React.version}</div>
       </div>
-    </>
+    </Router>
   );
 };
 
