@@ -2,7 +2,10 @@
 
 Test menu app for mf POC
 
-To be run with:
- - mf-root 
- - mf-subapp1
- - mf-subapp2
+### Apps:
+
+- mf-root
+- mf-menu
+- mf-subapp1
+- mf-subapp2
+- 
